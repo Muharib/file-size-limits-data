@@ -1,0 +1,1211 @@
+[
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "variant": null,
+    "category": "messaging",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio"
+        ],
+        "max": {
+          "value": 16,
+          "unit": "MB",
+          "bytes": 16000000
+        },
+        "overMax": {
+          "condition": "document_mode",
+          "conditionText": "Over 16 MB: only as a document (no preview, original quality)",
+          "upTo": {
+            "value": 2,
+            "unit": "GB",
+            "bytes": 2000000000
+          }
+        },
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 2,
+          "unit": "GB",
+          "bytes": 2000000000
+        }
+      }
+    ],
+    "note": "Photos, videos and voice notes: 16 MB as media. Any file up to 2 GB as a document.",
+    "source": "https://faq.whatsapp.com/",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram",
+    "variant": null,
+    "category": "messaging",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 2,
+          "unit": "GB",
+          "bytes": 2000000000
+        },
+        "overMax": {
+          "condition": "premium",
+          "conditionText": "Over the free limit: needs a paid Premium plan",
+          "upTo": {
+            "value": 4,
+            "unit": "GB",
+            "bytes": 4000000000
+          }
+        }
+      }
+    ],
+    "note": "2 GB per file; 4 GB with Telegram Premium.",
+    "source": "https://telegram.org/faq",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "signal",
+    "name": "Signal",
+    "variant": null,
+    "category": "messaging",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 100,
+          "unit": "MB",
+          "bytes": 100000000
+        }
+      }
+    ],
+    "note": null,
+    "source": "https://support.signal.org/",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "messenger",
+    "name": "Messenger",
+    "variant": null,
+    "category": "messaging",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image"
+        ],
+        "max": {
+          "value": 100,
+          "unit": "MB",
+          "bytes": 100000000
+        },
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 100,
+          "unit": "MB",
+          "bytes": 100000000
+        }
+      }
+    ],
+    "note": "Raised from 25 MB to 100 MB in 2025.",
+    "source": "https://www.socialmediatoday.com/news/messenger-increases-file-sharing-limit-to-100mb/745216/",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "imessage",
+    "name": "iMessage",
+    "variant": null,
+    "category": "messaging",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image"
+        ],
+        "max": {
+          "value": 100,
+          "unit": "MB",
+          "bytes": 100000000
+        },
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 100,
+          "unit": "MB",
+          "bytes": 100000000
+        }
+      }
+    ],
+    "note": "Apple publishes no figure; larger files fail or are sent in low quality.",
+    "source": "https://support.apple.com/messages",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "gmail",
+    "name": "Gmail",
+    "variant": null,
+    "category": "email",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 25,
+          "unit": "MB",
+          "bytes": 25000000
+        },
+        "overMax": {
+          "condition": "drive_link",
+          "conditionText": "Over 25 MB: sent as a Google Drive link, not as an attachment"
+        },
+        "countsEncoded": true
+      }
+    ],
+    "note": "Receiving: 50 MB. Over 25 MB, Gmail inserts a Google Drive link instead.",
+    "source": "https://support.google.com/mail/answer/6584",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "outlook",
+    "name": "Outlook.com",
+    "variant": null,
+    "category": "email",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 20,
+          "unit": "MB",
+          "bytes": 20000000
+        },
+        "overMax": {
+          "condition": "onedrive_link",
+          "conditionText": "Over 20 MB: sent as a OneDrive link, not as an attachment"
+        },
+        "countsEncoded": true
+      }
+    ],
+    "note": "For all attachments of one message. Larger files: share a OneDrive link.",
+    "source": "https://support.microsoft.com/office/send-large-files-with-outlook-8c698842-b462-4a4c-8d53-5c5dd04f77ef",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "yahoo",
+    "name": "Yahoo Mail",
+    "variant": null,
+    "category": "email",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 25,
+          "unit": "MB",
+          "bytes": 25000000
+        }
+      }
+    ],
+    "note": "For all attachments of one message.",
+    "source": "https://help.yahoo.com/kb/mail",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "proton",
+    "name": "Proton Mail",
+    "variant": null,
+    "category": "email",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 25,
+          "unit": "MB",
+          "bytes": 25000000
+        },
+        "countsEncoded": true
+      }
+    ],
+    "note": "Outgoing; the encoded size counts (a file grows by about 37 %). Receiving: 50 MB.",
+    "source": "https://proton.me/support/attaching-multiple-documents-to-a-message",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "orange",
+    "name": "Mail Orange",
+    "variant": null,
+    "category": "email",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 25,
+          "unit": "MB",
+          "bytes": 25000000
+        }
+      }
+    ],
+    "note": "Message and attachments together; reported by Orange's community, not an official page.",
+    "source": "https://communaute.orange.fr/t5/mon-mail-Orange/pi%C3%A8ces-jointe-trop-grande/td-p/222871",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "free",
+    "name": "Free (Zimbra)",
+    "variant": null,
+    "category": "email",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 75,
+          "unit": "MB",
+          "bytes": 75000000
+        }
+      }
+    ],
+    "note": "Figure from 2017 (raised from 10 MB); not confirmed since.",
+    "source": "https://www.universfreebox.com/article/38847/Mail-Free-Zimbra-permet-maintenant-d-envoyer-des-fichiers-plus-volumineux",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "sfr",
+    "name": "SFR Mail",
+    "variant": null,
+    "category": "email",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 100,
+          "unit": "MB",
+          "bytes": 100000000
+        }
+      }
+    ],
+    "note": "Figure from third-party guides; SFR's help pages do not state it.",
+    "source": "https://assistance.sfr.fr/",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "instagram-feed",
+    "name": "Instagram",
+    "variant": "feed",
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image"
+        ],
+        "max": {
+          "value": 30,
+          "unit": "MB",
+          "bytes": 30000000
+        },
+        "resizedAbovePx": 1080,
+        "conditions": [
+          "compressed"
+        ]
+      }
+    ],
+    "note": null,
+    "source": "https://help.instagram.com/",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "instagram-reel",
+    "name": "Instagram",
+    "variant": "reel",
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 4,
+          "unit": "GB",
+          "bytes": 4000000000
+        },
+        "maxDurationSec": 180,
+        "overDuration": {
+          "condition": "long_reel",
+          "upToSec": 900
+        },
+        "conditions": [
+          "compressed"
+        ]
+      }
+    ],
+    "note": "3 minutes for a Reel; videos up to 15 minutes are still posted as Reels.",
+    "source": "https://about.instagram.com/blog/announcements",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "instagram-story",
+    "name": "Instagram",
+    "variant": "story",
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 4,
+          "unit": "GB",
+          "bytes": 4000000000
+        },
+        "maxDurationSec": 60,
+        "overDuration": {
+          "condition": "split_stories"
+        },
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "image"
+        ],
+        "max": {
+          "value": 30,
+          "unit": "MB",
+          "bytes": 30000000
+        },
+        "conditions": [
+          "compressed"
+        ]
+      }
+    ],
+    "note": null,
+    "source": "https://help.instagram.com/",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "tiktok",
+    "name": "TikTok",
+    "variant": null,
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "maxDurationSec": 3600,
+        "conditions": [
+          "compressed"
+        ]
+      }
+    ],
+    "note": "Up to 60 min when uploaded, 10 min when recorded in the app. File size: no reliable official figure.",
+    "source": "https://support.tiktok.com/",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "x",
+    "name": "X (Twitter)",
+    "variant": null,
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image"
+        ],
+        "mimes": [
+          "image/gif"
+        ],
+        "max": {
+          "value": 15,
+          "unit": "MB",
+          "bytes": 15000000
+        }
+      },
+      {
+        "kinds": [
+          "image"
+        ],
+        "max": {
+          "value": 5,
+          "unit": "MB",
+          "bytes": 5000000
+        },
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 512,
+          "unit": "MB",
+          "bytes": 512000000
+        },
+        "maxDurationSec": 140,
+        "overDuration": {
+          "condition": "premium"
+        },
+        "conditions": [
+          "compressed"
+        ]
+      }
+    ],
+    "note": "Free accounts. Premium: longer and larger videos.",
+    "source": "https://help.x.com/en/using-x/x-videos",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "variant": null,
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 10,
+          "unit": "GB",
+          "bytes": 10000000000
+        },
+        "maxDurationSec": 14400,
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "image"
+        ],
+        "resizedAbovePx": 2048,
+        "conditions": [
+          "compressed"
+        ]
+      }
+    ],
+    "note": null,
+    "source": "https://www.facebook.com/help/",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "variant": null,
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 5,
+          "unit": "GB",
+          "bytes": 5000000000
+        },
+        "maxDurationSec": 900,
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "pdf"
+        ],
+        "max": {
+          "value": 100,
+          "unit": "MB",
+          "bytes": 100000000
+        },
+        "maxPages": 300
+      }
+    ],
+    "note": "Video: 15 min from a computer, 10 min from the app. PDF documents: 100 MB, 300 pages.",
+    "source": "https://www.linkedin.com/help/linkedin/",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "variant": null,
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 256,
+          "unit": "GB",
+          "bytes": 256000000000
+        },
+        "maxDurationSec": 900,
+        "overDuration": {
+          "condition": "verified_account",
+          "upToSec": 43200
+        }
+      }
+    ],
+    "note": "256 GB or 12 hours, whichever comes first. Over 15 min: verified account.",
+    "source": "https://support.google.com/youtube/answer/71673",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "pinterest",
+    "name": "Pinterest",
+    "variant": null,
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 2,
+          "unit": "GB",
+          "bytes": 2000000000
+        },
+        "maxDurationSec": 900
+      },
+      {
+        "kinds": [
+          "image"
+        ],
+        "max": {
+          "value": 20,
+          "unit": "MB",
+          "bytes": 20000000
+        }
+      }
+    ],
+    "note": null,
+    "source": "https://help.pinterest.com/business/article/pinterest-product-specs",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "threads",
+    "name": "Threads",
+    "variant": null,
+    "category": "social",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video"
+        ],
+        "max": {
+          "value": 1,
+          "unit": "GB",
+          "bytes": 1000000000
+        },
+        "maxDurationSec": 300,
+        "conditions": [
+          "compressed"
+        ]
+      },
+      {
+        "kinds": [
+          "image"
+        ],
+        "max": {
+          "value": 8,
+          "unit": "MB",
+          "bytes": 8000000
+        },
+        "conditions": [
+          "compressed"
+        ]
+      }
+    ],
+    "note": null,
+    "source": "https://help.instagram.com/",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "variant": null,
+    "category": "work",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 1,
+          "unit": "GB",
+          "bytes": 1000000000
+        }
+      }
+    ],
+    "note": null,
+    "source": "https://slack.com/help/articles/201330736",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "teams",
+    "name": "Microsoft Teams",
+    "variant": null,
+    "category": "work",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 250,
+          "unit": "GB",
+          "bytes": 250000000000
+        }
+      }
+    ],
+    "note": null,
+    "source": "https://learn.microsoft.com/microsoftteams/limits-specifications-teams",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "variant": null,
+    "category": "work",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 20,
+          "unit": "MiB",
+          "bytes": 20971520
+        },
+        "overMax": {
+          "condition": "nitro",
+          "conditionText": "Over 20 MiB: needs Nitro (Nitro Basic 50 MB, Nitro 500 MB)",
+          "upTo": {
+            "value": 500,
+            "unit": "MiB",
+            "bytes": 524288000
+          }
+        }
+      }
+    ],
+    "note": "Free accounts: 20 MB since August 2026 (10 MB before). Nitro Basic: 50 MB, Nitro: 500 MB.",
+    "source": "https://www.dexerto.com/entertainment/discord-raises-free-upload-limit-to-20mb-after-lowering-it-two-years-ago-3398251/",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "google-drive",
+    "name": "Google Drive",
+    "variant": "single_file",
+    "category": "work",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 15,
+          "unit": "GB",
+          "bytes": 15000000000
+        },
+        "overMax": {
+          "condition": "storage_quota",
+          "conditionText": "Over 15 GB: more than the free storage — needs a paid plan",
+          "upTo": {
+            "value": 5,
+            "unit": "TB",
+            "bytes": 5000000000000
+          }
+        }
+      }
+    ],
+    "note": "5 TB per file, but a free account has 15 GB of storage in total.",
+    "source": "https://support.google.com/drive/answer/37603",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "wetransfer",
+    "name": "WeTransfer",
+    "variant": "free",
+    "category": "work",
+    "countries": [
+      "FR",
+      "US"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "video",
+          "image",
+          "audio",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 3,
+          "unit": "GB",
+          "bytes": 3000000000
+        },
+        "conditions": [
+          "monthly_quota"
+        ]
+      }
+    ],
+    "note": "Free plan since December 2024: 3 GB and 10 transfers per 30 days.",
+    "source": "https://help.wetransfer.com/hc/en-us/articles/23265597795346",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "caf",
+    "name": "CAF",
+    "variant": "justificatifs",
+    "category": "admin",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image",
+          "pdf"
+        ],
+        "max": {
+          "value": 10,
+          "unit": "MB",
+          "bytes": 10000000
+        },
+        "formats": [
+          "pdf",
+          "jpg",
+          "png",
+          "gif"
+        ]
+      }
+    ],
+    "note": "Whole document (all pages together).",
+    "source": "https://caf.fr/allocataires/caf-de-paris/offre-de-service/thematique-libre/allocataire-comment-transmettre-un-document",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "france-travail",
+    "name": "France Travail",
+    "variant": "advisor_mail",
+    "category": "admin",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image",
+          "pdf",
+          "audio",
+          "video",
+          "other"
+        ],
+        "max": {
+          "value": 5,
+          "unit": "MB",
+          "bytes": 5000000
+        },
+        "formats": [
+          "pdf",
+          "jpg",
+          "png",
+          "gif",
+          "3gp",
+          "txt",
+          "html",
+          "wav",
+          "zip"
+        ]
+      }
+    ],
+    "note": "Attachment of a mail to your adviser.",
+    "source": "https://www.francetravail.fr/faq/candidat/assistance-technique/envoyer-mail-conseiller/piece-jointe-non-reconnue.html",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "impots",
+    "name": "impots.gouv.fr",
+    "variant": "secure_messaging",
+    "category": "admin",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 10,
+          "unit": "MB",
+          "bytes": 10000000
+        }
+      }
+    ],
+    "note": "Attachment of a secure message in your personal space.",
+    "source": "https://www.impots.gouv.fr/sites/default/files/aide/pas-a-pas/messagerie/creation_demande.html",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "ants",
+    "name": "ANTS",
+    "variant": "vehicle_docs",
+    "category": "admin",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image",
+          "pdf"
+        ],
+        "max": {
+          "value": 1,
+          "unit": "MB",
+          "bytes": 1000000
+        },
+        "formats": [
+          "pdf",
+          "png",
+          "jpg"
+        ]
+      }
+    ],
+    "note": "Per supporting document of a vehicle registration request, as reported by users.",
+    "source": "https://www.plus.transformation.gouv.fr/experiences/6608815_fichier-superieur-a-1mo-pour-carte-grise",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "ants-permis",
+    "name": "ANTS",
+    "variant": "driving_licence",
+    "category": "admin",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image",
+          "pdf"
+        ],
+        "max": {
+          "value": 11,
+          "unit": "MB",
+          "bytes": 11000000
+        },
+        "formats": [
+          "pdf",
+          "jpg",
+          "png",
+          "bmp",
+          "tiff"
+        ]
+      }
+    ],
+    "note": "Per supporting document of a driving licence request, as reported by users.",
+    "source": "https://www.plus.transformation.gouv.fr/experiences/2910392_ants-demande-de-permis",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  },
+  {
+    "id": "demarches-simplifiees",
+    "name": "Démarches simplifiées",
+    "variant": null,
+    "category": "admin",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image",
+          "pdf",
+          "other"
+        ],
+        "max": {
+          "value": 200,
+          "unit": "MB",
+          "bytes": 200000000
+        },
+        "formats": [
+          "pdf",
+          "doc",
+          "docx",
+          "xls",
+          "xlsx",
+          "csv",
+          "ppt",
+          "pptx",
+          "odt",
+          "ods",
+          "odp",
+          "jpg",
+          "png"
+        ]
+      }
+    ],
+    "note": "All attachments of one save of the form; some procedures set a lower limit.",
+    "source": "https://www.guadeloupe.gouv.fr/index.php/contenu/telechargement/25411/155780/file/Guide%20des%20usagers_demarches-simplifiees.fr.pdf",
+    "lastChecked": "2026-10-04",
+    "confidence": "high"
+  },
+  {
+    "id": "dse",
+    "name": "messervices.etudiant.gouv.fr",
+    "variant": "student_file",
+    "category": "admin",
+    "countries": [
+      "FR"
+    ],
+    "rules": [
+      {
+        "kinds": [
+          "image",
+          "pdf"
+        ],
+        "formats": [
+          "pdf",
+          "png",
+          "jpg"
+        ]
+      }
+    ],
+    "note": "Supporting documents of the grant and housing application (Crous); no published size limit.",
+    "source": "https://www.etudiant.gouv.fr/cid111606/constituez-votre-dossier-social-etudiant-dse.html",
+    "lastChecked": "2026-10-04",
+    "confidence": "low"
+  }
+]

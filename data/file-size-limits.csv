@@ -1,0 +1,45 @@
+id,name,variant,category,countries,file_kinds,max_value,max_unit,max_bytes,accepted_formats,over_max_condition,over_max_up_to,max_duration_sec,max_pages,source,last_checked,confidence
+whatsapp,WhatsApp,,messaging,FR|US,video|image|audio,16,MB,16000000,,document_mode,2 GB,,,https://faq.whatsapp.com/,2026-10-04,high
+whatsapp,WhatsApp,,messaging,FR|US,pdf|other,2,GB,2000000000,,,,,,https://faq.whatsapp.com/,2026-10-04,high
+telegram,Telegram,,messaging,FR|US,video|image|audio|pdf|other,2,GB,2000000000,,premium,4 GB,,,https://telegram.org/faq,2026-10-04,high
+signal,Signal,,messaging,FR|US,video|image|audio|pdf|other,100,MB,100000000,,,,,,https://support.signal.org/,2026-10-04,low
+messenger,Messenger,,messaging,FR|US,video|image,100,MB,100000000,,,,,,https://www.socialmediatoday.com/news/messenger-increases-file-sharing-limit-to-100mb/745216/,2026-10-04,high
+messenger,Messenger,,messaging,FR|US,audio|pdf|other,100,MB,100000000,,,,,,https://www.socialmediatoday.com/news/messenger-increases-file-sharing-limit-to-100mb/745216/,2026-10-04,high
+imessage,iMessage,,messaging,FR|US,video|image,100,MB,100000000,,,,,,https://support.apple.com/messages,2026-10-04,low
+imessage,iMessage,,messaging,FR|US,audio|pdf|other,100,MB,100000000,,,,,,https://support.apple.com/messages,2026-10-04,low
+gmail,Gmail,,email,FR|US,video|image|audio|pdf|other,25,MB,25000000,,drive_link,,,,https://support.google.com/mail/answer/6584,2026-10-04,high
+outlook,Outlook.com,,email,FR|US,video|image|audio|pdf|other,20,MB,20000000,,onedrive_link,,,,https://support.microsoft.com/office/send-large-files-with-outlook-8c698842-b462-4a4c-8d53-5c5dd04f77ef,2026-10-04,high
+yahoo,Yahoo Mail,,email,FR|US,video|image|audio|pdf|other,25,MB,25000000,,,,,,https://help.yahoo.com/kb/mail,2026-10-04,high
+proton,Proton Mail,,email,FR|US,video|image|audio|pdf|other,25,MB,25000000,,,,,,https://proton.me/support/attaching-multiple-documents-to-a-message,2026-10-04,high
+orange,Mail Orange,,email,FR,video|image|audio|pdf|other,25,MB,25000000,,,,,,https://communaute.orange.fr/t5/mon-mail-Orange/pi%C3%A8ces-jointe-trop-grande/td-p/222871,2026-10-04,low
+free,Free (Zimbra),,email,FR,video|image|audio|pdf|other,75,MB,75000000,,,,,,https://www.universfreebox.com/article/38847/Mail-Free-Zimbra-permet-maintenant-d-envoyer-des-fichiers-plus-volumineux,2026-10-04,low
+sfr,SFR Mail,,email,FR,video|image|audio|pdf|other,100,MB,100000000,,,,,,https://assistance.sfr.fr/,2026-10-04,low
+instagram-feed,Instagram,feed,social,FR|US,image,30,MB,30000000,,,,,,https://help.instagram.com/,2026-10-04,low
+instagram-reel,Instagram,reel,social,FR|US,video,4,GB,4000000000,,,,180,,https://about.instagram.com/blog/announcements,2026-10-04,high
+instagram-story,Instagram,story,social,FR|US,video,4,GB,4000000000,,,,60,,https://help.instagram.com/,2026-10-04,low
+instagram-story,Instagram,story,social,FR|US,image,30,MB,30000000,,,,,,https://help.instagram.com/,2026-10-04,low
+tiktok,TikTok,,social,FR|US,video,,,,,,,3600,,https://support.tiktok.com/,2026-10-04,low
+x,X (Twitter),,social,FR|US,image,15,MB,15000000,,,,,,https://help.x.com/en/using-x/x-videos,2026-10-04,high
+x,X (Twitter),,social,FR|US,image,5,MB,5000000,,,,,,https://help.x.com/en/using-x/x-videos,2026-10-04,high
+x,X (Twitter),,social,FR|US,video,512,MB,512000000,,,,140,,https://help.x.com/en/using-x/x-videos,2026-10-04,high
+facebook,Facebook,,social,FR|US,video,10,GB,10000000000,,,,14400,,https://www.facebook.com/help/,2026-10-04,high
+facebook,Facebook,,social,FR|US,image,,,,,,,,,https://www.facebook.com/help/,2026-10-04,high
+linkedin,LinkedIn,,social,FR|US,video,5,GB,5000000000,,,,900,,https://www.linkedin.com/help/linkedin/,2026-10-04,high
+linkedin,LinkedIn,,social,FR|US,pdf,100,MB,100000000,,,,,300,https://www.linkedin.com/help/linkedin/,2026-10-04,high
+youtube,YouTube,,social,FR|US,video,256,GB,256000000000,,,,900,,https://support.google.com/youtube/answer/71673,2026-10-04,high
+pinterest,Pinterest,,social,FR|US,video,2,GB,2000000000,,,,900,,https://help.pinterest.com/business/article/pinterest-product-specs,2026-10-04,low
+pinterest,Pinterest,,social,FR|US,image,20,MB,20000000,,,,,,https://help.pinterest.com/business/article/pinterest-product-specs,2026-10-04,low
+threads,Threads,,social,FR|US,video,1,GB,1000000000,,,,300,,https://help.instagram.com/,2026-10-04,low
+threads,Threads,,social,FR|US,image,8,MB,8000000,,,,,,https://help.instagram.com/,2026-10-04,low
+slack,Slack,,work,FR|US,video|image|audio|pdf|other,1,GB,1000000000,,,,,,https://slack.com/help/articles/201330736,2026-10-04,high
+teams,Microsoft Teams,,work,FR|US,video|image|audio|pdf|other,250,GB,250000000000,,,,,,https://learn.microsoft.com/microsoftteams/limits-specifications-teams,2026-10-04,high
+discord,Discord,,work,FR|US,video|image|audio|pdf|other,20,MiB,20971520,,nitro,500 MiB,,,https://www.dexerto.com/entertainment/discord-raises-free-upload-limit-to-20mb-after-lowering-it-two-years-ago-3398251/,2026-10-04,high
+google-drive,Google Drive,single_file,work,FR|US,video|image|audio|pdf|other,15,GB,15000000000,,storage_quota,5 TB,,,https://support.google.com/drive/answer/37603,2026-10-04,high
+wetransfer,WeTransfer,free,work,FR|US,video|image|audio|pdf|other,3,GB,3000000000,,,,,,https://help.wetransfer.com/hc/en-us/articles/23265597795346,2026-10-04,high
+caf,CAF,justificatifs,admin,FR,image|pdf,10,MB,10000000,pdf|jpg|png|gif,,,,,https://caf.fr/allocataires/caf-de-paris/offre-de-service/thematique-libre/allocataire-comment-transmettre-un-document,2026-10-04,high
+france-travail,France Travail,advisor_mail,admin,FR,image|pdf|audio|video|other,5,MB,5000000,pdf|jpg|png|gif|3gp|txt|html|wav|zip,,,,,https://www.francetravail.fr/faq/candidat/assistance-technique/envoyer-mail-conseiller/piece-jointe-non-reconnue.html,2026-10-04,high
+impots,impots.gouv.fr,secure_messaging,admin,FR,image|pdf|other,10,MB,10000000,,,,,,https://www.impots.gouv.fr/sites/default/files/aide/pas-a-pas/messagerie/creation_demande.html,2026-10-04,low
+ants,ANTS,vehicle_docs,admin,FR,image|pdf,1,MB,1000000,pdf|png|jpg,,,,,https://www.plus.transformation.gouv.fr/experiences/6608815_fichier-superieur-a-1mo-pour-carte-grise,2026-10-04,low
+ants-permis,ANTS,driving_licence,admin,FR,image|pdf,11,MB,11000000,pdf|jpg|png|bmp|tiff,,,,,https://www.plus.transformation.gouv.fr/experiences/2910392_ants-demande-de-permis,2026-10-04,low
+demarches-simplifiees,Démarches simplifiées,,admin,FR,image|pdf|other,200,MB,200000000,pdf|doc|docx|xls|xlsx|csv|ppt|pptx|odt|ods|odp|jpg|png,,,,,https://www.guadeloupe.gouv.fr/index.php/contenu/telechargement/25411/155780/file/Guide%20des%20usagers_demarches-simplifiees.fr.pdf,2026-10-04,high
+dse,messervices.etudiant.gouv.fr,student_file,admin,FR,image|pdf,,,,pdf|png|jpg,,,,,https://www.etudiant.gouv.fr/cid111606/constituez-votre-dossier-social-etudiant-dse.html,2026-10-04,low

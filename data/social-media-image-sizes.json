@@ -1,0 +1,295 @@
+[
+  {
+    "id": "instagram",
+    "name": "Instagram",
+    "source": "https://help.instagram.com/1631821640426723",
+    "lastChecked": "2026-10-04",
+    "confidence": "high",
+    "formats": [
+      {
+        "id": "instagram-square",
+        "kind": "post",
+        "width": 1080,
+        "height": 1080,
+        "notes": [
+          "Instagram stores photos 1080 px wide at most: a wider image is scaled down, one under 320 px is scaled up."
+        ],
+        "source": "https://help.instagram.com/1631821640426723",
+        "confidence": "high"
+      },
+      {
+        "id": "instagram-portrait",
+        "kind": "portrait",
+        "width": 1080,
+        "height": 1350,
+        "notes": [
+          "Any ratio between 1.91:1 (landscape) and 4:5 (portrait) is kept; outside that range the photo is cropped."
+        ],
+        "source": "https://help.instagram.com/1631821640426723",
+        "confidence": "high"
+      },
+      {
+        "id": "instagram-tall",
+        "kind": "tall",
+        "width": 1080,
+        "height": 1440,
+        "notes": [
+          "The profile grid shows posts as 3:4 tiles: an image of this size appears whole there."
+        ],
+        "source": "https://help.instagram.com/1631821640426723",
+        "confidence": "high"
+      },
+      {
+        "id": "instagram-landscape",
+        "kind": "landscape",
+        "width": 1080,
+        "height": 566,
+        "notes": [
+          "Any ratio between 1.91:1 (landscape) and 4:5 (portrait) is kept; outside that range the photo is cropped."
+        ],
+        "source": "https://help.instagram.com/1631821640426723",
+        "confidence": "high"
+      },
+      {
+        "id": "instagram-story",
+        "kind": "story",
+        "width": 1080,
+        "height": 1920,
+        "notes": [
+          "9:16, full screen on a phone: keep text away from the top and bottom, where buttons and captions sit."
+        ],
+        "source": "https://help.instagram.com/1631821640426723",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "source": "https://www.facebook.com/help/125379114252045",
+    "lastChecked": "2026-10-04",
+    "confidence": "high",
+    "formats": [
+      {
+        "id": "facebook-post",
+        "kind": "post",
+        "width": 1200,
+        "height": 630,
+        "notes": [
+          "Image shown when a link is shared (preview card)."
+        ],
+        "source": "https://www.facebook.com/help/125379114252045",
+        "confidence": "high"
+      },
+      {
+        "id": "facebook-cover",
+        "kind": "cover",
+        "width": 851,
+        "height": 315,
+        "notes": [
+          "Shown at 820 × 312 on a computer and 640 × 360 on a phone: keep text in the middle.",
+          "At least 400 × 150. An sRGB JPG under 100 KB loads fastest."
+        ],
+        "source": "https://www.facebook.com/help/125379114252045",
+        "confidence": "high"
+      },
+      {
+        "id": "facebook-profile",
+        "kind": "profile",
+        "width": 320,
+        "height": 320,
+        "notes": [
+          "Shown as a circle: keep the face or logo in the centre."
+        ],
+        "source": "https://www.facebook.com/help/125379114252045",
+        "confidence": "high"
+      },
+      {
+        "id": "facebook-story",
+        "kind": "story",
+        "width": 1080,
+        "height": 1920,
+        "notes": [
+          "9:16, full screen on a phone: keep text away from the top and bottom, where buttons and captions sit."
+        ],
+        "source": "https://www.facebook.com/help/125379114252045",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "x",
+    "name": "Twitter/X",
+    "source": "https://help.x.com/en/managing-your-account/common-issues-when-uploading-profile-photo",
+    "lastChecked": "2026-10-04",
+    "confidence": "high",
+    "formats": [
+      {
+        "id": "x-post",
+        "kind": "post",
+        "width": 1200,
+        "height": 675,
+        "notes": [],
+        "source": "https://help.x.com/en/managing-your-account/common-issues-when-uploading-profile-photo",
+        "confidence": "high"
+      },
+      {
+        "id": "x-header",
+        "kind": "header",
+        "width": 1500,
+        "height": 500,
+        "notes": [
+          "The profile photo covers the bottom left; the top and bottom can be cropped depending on the screen."
+        ],
+        "source": "https://help.x.com/en/managing-your-account/common-issues-when-uploading-profile-photo",
+        "confidence": "high"
+      },
+      {
+        "id": "x-profile",
+        "kind": "profile",
+        "width": 400,
+        "height": 400,
+        "notes": [
+          "Shown as a circle: keep the face or logo in the centre."
+        ],
+        "source": "https://help.x.com/en/managing-your-account/common-issues-when-uploading-profile-photo",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "source": "https://www.linkedin.com/help/linkedin",
+    "lastChecked": "2026-10-04",
+    "confidence": "low",
+    "formats": [
+      {
+        "id": "linkedin-post",
+        "kind": "post",
+        "width": 1200,
+        "height": 627,
+        "notes": [],
+        "source": "https://www.linkedin.com/help/linkedin",
+        "confidence": "low"
+      },
+      {
+        "id": "linkedin-cover",
+        "kind": "cover",
+        "width": 1584,
+        "height": 396,
+        "notes": [
+          "JPG or PNG, under 8 MB."
+        ],
+        "source": "https://www.linkedin.com/help/linkedin",
+        "confidence": "low"
+      },
+      {
+        "id": "linkedin-profile",
+        "kind": "profile",
+        "width": 400,
+        "height": 400,
+        "notes": [
+          "Shown as a circle: keep the face or logo in the centre.",
+          "JPG or PNG, under 8 MB."
+        ],
+        "source": "https://www.linkedin.com/help/linkedin",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "source": "https://support.google.com/youtube/answer/72431",
+    "lastChecked": "2026-10-04",
+    "confidence": "high",
+    "formats": [
+      {
+        "id": "youtube-thumbnail",
+        "kind": "thumbnail",
+        "width": 1280,
+        "height": 720,
+        "notes": [
+          "16:9, at least 640 px wide. YouTube accepts up to 3840 × 2160."
+        ],
+        "source": "https://support.google.com/youtube/answer/72431",
+        "confidence": "high"
+      },
+      {
+        "id": "youtube-banner",
+        "kind": "banner",
+        "width": 2560,
+        "height": 1440,
+        "notes": [
+          "At least 2048 × 1152, 6 MB max. TVs show the whole image, phones only a centred strip: keep text and logo in the middle."
+        ],
+        "source": "https://support.google.com/youtube/answer/72431",
+        "confidence": "low"
+      },
+      {
+        "id": "youtube-profile",
+        "kind": "profile",
+        "width": 800,
+        "height": 800,
+        "notes": [
+          "Shown as a circle: keep the face or logo in the centre."
+        ],
+        "source": "https://support.google.com/youtube/answer/72431",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "tiktok",
+    "name": "TikTok",
+    "source": "https://support.tiktok.com/en/using-tiktok/creating-videos",
+    "lastChecked": "2026-10-04",
+    "confidence": "low",
+    "formats": [
+      {
+        "id": "tiktok-video",
+        "kind": "video",
+        "width": 1080,
+        "height": 1920,
+        "notes": [
+          "9:16, full screen on a phone: keep text away from the top and bottom, where buttons and captions sit."
+        ],
+        "source": "https://support.tiktok.com/en/using-tiktok/creating-videos",
+        "confidence": "low"
+      },
+      {
+        "id": "tiktok-profile",
+        "kind": "profile",
+        "width": 200,
+        "height": 200,
+        "notes": [
+          "Shown as a circle: keep the face or logo in the centre.",
+          "At least 20 × 20."
+        ],
+        "source": "https://support.tiktok.com/en/using-tiktok/creating-videos",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "id": "pinterest",
+    "name": "Pinterest",
+    "source": "https://help.pinterest.com/en/business/article/pinterest-product-specs",
+    "lastChecked": "2026-10-04",
+    "confidence": "high",
+    "formats": [
+      {
+        "id": "pinterest-pin",
+        "kind": "pin",
+        "width": 1000,
+        "height": 1500,
+        "notes": [
+          "Pinterest recommends 2:3; taller pins can be cut off in the feed."
+        ],
+        "source": "https://help.pinterest.com/en/business/article/pinterest-product-specs",
+        "confidence": "high"
+      }
+    ]
+  }
+]
